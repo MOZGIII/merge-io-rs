@@ -11,7 +11,9 @@ readme = "README.md"
 
 [badges]
 travis-ci = { repository = "MOZGIII/merge-io-rs", branch = "master" }
-maintenance = { status = "passively-maintained" }
+is-it-maintained-issue-resolution = { repository = "MOZGIII/merge-io-rs" }
+is-it-maintained-open-issues = { repository = "MOZGIII/merge-io-rs" }
+maintenance = { status = "actively-developed" }
 
 [dependencies]
 futures-preview = "0.3.0-alpha.17"
