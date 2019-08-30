@@ -1,5 +1,4 @@
 #![warn(missing_debug_implementations, rust_2018_idioms)]
-#![feature(async_await)]
 
 use futures::executor;
 use futures::{AsyncReadExt, AsyncWriteExt};
