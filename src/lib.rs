@@ -40,7 +40,6 @@
 
 #![warn(missing_debug_implementations, rust_2018_idioms, missing_docs)]
 
-use futures::io::Initializer;
 use futures::prelude::*;
 use std::io::{IoSlice, IoSliceMut, Result};
 use std::pin::Pin;
@@ -101,11 +100,6 @@ where
     R: AsyncRead + Unpin,
     W: AsyncWrite + Unpin,
 {
-    #[inline]
-    unsafe fn initializer(&self) -> Initializer {
-        self.reader.initializer()
-    }
-
     fn poll_read(
         self: Pin<&mut Self>,
         cx: &mut Context<'_>,
