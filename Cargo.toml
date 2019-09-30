@@ -1,6 +1,6 @@
 [package]
 name = "merge-io"
-version = "0.1.2"
+version = "0.2.0"
 authors = ["MOZGIII <mike-n@narod.ru>"]
 edition = "2018"
 description = "Merge two separate `AsyncRead` and `AsyncWrite` objects into a single I/O stream."
