@@ -1,10 +1,10 @@
 #![warn(missing_debug_implementations, rust_2018_idioms)]
 
 use futures::executor;
-use futures::{AsyncReadExt, AsyncWriteExt};
+use futures::{AsyncReadExt, AsyncWriteExt, io::Cursor};
+use std::io::Result;
 
 use merge_io::MergeIO;
-use std::io::{Cursor, Result};
 
 #[test]
 fn test_duplex() -> Result<()> {

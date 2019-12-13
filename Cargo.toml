@@ -16,4 +16,7 @@ is-it-maintained-open-issues = { repository = "MOZGIII/merge-io-rs" }
 maintenance = { status = "actively-developed" }
 
 [dependencies]
-futures-preview = "0.3.0-alpha.19"
+futures-io = "0.3"
+
+[dev-dependencies]
+futures = "0.3"

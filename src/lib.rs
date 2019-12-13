@@ -8,7 +8,7 @@
 //! # fn main() -> Result<(), Box<dyn std::error::Error>> {
 //! # futures::executor::block_on(async {
 //! use merge_io::MergeIO;
-//! use std::io::Cursor;
+//! use futures::io::Cursor;
 //! use futures::{AsyncReadExt, AsyncWriteExt};
 //!
 //! // Prepare `reader` to read data from...
@@ -40,7 +40,7 @@
 
 #![warn(missing_debug_implementations, rust_2018_idioms, missing_docs)]
 
-use futures::prelude::*;
+use futures_io::{AsyncRead, AsyncWrite};
 use std::io::{IoSlice, IoSliceMut, Result};
 use std::pin::Pin;
 use std::task::{Context, Poll};
