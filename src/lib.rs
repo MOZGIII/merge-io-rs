@@ -4,7 +4,6 @@
 //! # Examples
 //!
 //! ```
-//! # #![feature(async_await)]
 //! # fn main() -> Result<(), Box<dyn std::error::Error>> {
 //! # futures::executor::block_on(async {
 //! use merge_io::MergeIO;
